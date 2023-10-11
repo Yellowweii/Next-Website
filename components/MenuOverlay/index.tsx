@@ -10,7 +10,7 @@ interface MenuOverlayProps {
 
 const MenuOverlay = ({ links }: MenuOverlayProps) => {
   return (
-    <ul className="flex flex-col py-4 items-center">
+    <ul className="md:hidden flex flex-col py-4 items-center">
       {links.map((link, index) => (
         <li key={index}>
           <NavLink title={link.title} href={link.href} />
