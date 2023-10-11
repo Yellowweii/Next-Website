@@ -31,11 +31,11 @@ const Navbar = () => {
         </Link>
         <div className="mobile-menu block md:hidden">
           {showMenu ? (
-            <button onClick={() => setShowMenu(false)} className="text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white">
+            <button onClick={() => setShowMenu(false)} className="buttonClass">
               <XMarkIcon className="w-5 h-5" />
             </button>
           ) : (
-            <button onClick={() => setShowMenu(true)} className="text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white">
+            <button onClick={() => setShowMenu(true)} className="buttonClass">
               <Bars3Icon className="w-5 h-5" />
             </button>
           )}
