@@ -1,5 +1,7 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import ProjectCard from "../ProjectCard";
+import ProjectTag from "../ProjectTag";
 
 const projectsData = [
   {
@@ -59,19 +61,25 @@ const projectsData = [
 ];
 
 const ProjectSection = () => {
+  const [tag, setTag] = useState("All");
+
+  const filterProjects = () => {
+    return projectsData.filter((project) => project.tag.includes(tag));
+  };
   return (
-    <>
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">My Projects</h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <button className="rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer">All</button>
-        <button className="rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer">Web</button>
+        <ProjectTag name="All" onClick={() => setTag("All")} isSelected={tag === "All"} />
+        <ProjectTag name="Web" onClick={() => setTag("Web")} isSelected={tag === "Web"} />
+        <ProjectTag name="Mobile" onClick={() => setTag("Mobile")} isSelected={tag === "Mobile"} />
       </div>
       <div>
-        {projectsData.map((project) => (
+        {filterProjects().map((project) => (
           <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} gitUrl={project.gitUrl} previewUrl={project.previewUrl} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
