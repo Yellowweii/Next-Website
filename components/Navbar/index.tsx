@@ -24,7 +24,7 @@ const navLinks = [
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <nav className="fixed mx-auto top-0 left-0 z-10 bg-[#121212] bg-opacity-100 w-full">
+    <nav className="fixed mx-auto border border-[#33353f] top-0 left-0 z-10 bg-[#121212] bg-opacity-100 w-full">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2 container lg:py-4">
         <Link className="text-4xl md:text-5xl text-white font-semibold" href="/">
           Logo
