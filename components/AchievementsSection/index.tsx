@@ -1,15 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import dynamic from "next/dynamic";
 
 const achievementsList = [
   {
     metric: "Projects",
-    value: "100",
-    postfix: "+",
+    value: "100+",
   },
   {
-    prefix: "~",
     metric: "Users",
-    value: "100,000",
+    value: "1M+",
   },
   {
     metric: "Awards",

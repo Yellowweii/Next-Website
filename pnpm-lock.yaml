@@ -17,6 +17,9 @@ dependencies:
   react:
     specifier: ^18.2.0
     version: registry.npmmirror.com/react@18.2.0
+  react-animated-numbers:
+    specifier: ^0.16.0
+    version: registry.npmmirror.com/react-animated-numbers@0.16.0(react-dom@18.2.0)(react@18.2.0)
   react-dom:
     specifier: ^18.2.0
     version: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
@@ -32,11 +35,11 @@ devDependencies:
     specifier: ^20.8.4
     version: registry.npmmirror.com/@types/node@20.8.4
   '@types/react':
-    specifier: ^18.2.27
-    version: registry.npmmirror.com/@types/react@18.2.27
+    specifier: ^18.2.28
+    version: registry.npmmirror.com/@types/react@18.2.28
   '@types/react-dom':
-    specifier: ^18.2.12
-    version: registry.npmmirror.com/@types/react-dom@18.2.12
+    specifier: ^18.2.13
+    version: registry.npmmirror.com/@types/react-dom@18.2.13
   autoprefixer:
     specifier: ^10.4.16
     version: registry.npmmirror.com/autoprefixer@10.4.16(postcss@8.4.31)
@@ -282,6 +285,68 @@ packages:
       react-dom: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
     dev: false
 
+  registry.npmmirror.com/@react-spring/animated@9.7.3(react@18.2.0):
+    resolution: {integrity: sha512-5CWeNJt9pNgyvuSzQH+uy2pvTg8Y4/OisoscZIR8/ZNLIOI+CatFBhGZpDGTF/OzdNFsAoGk3wiUYTwoJ0YIvw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/animated/-/animated-9.7.3.tgz}
+    id: registry.npmmirror.com/@react-spring/animated/9.7.3
+    name: '@react-spring/animated'
+    version: 9.7.3
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared@9.7.3(react@18.2.0)
+      '@react-spring/types': registry.npmmirror.com/@react-spring/types@9.7.3
+      react: registry.npmmirror.com/react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@react-spring/core@9.7.3(react@18.2.0):
+    resolution: {integrity: sha512-IqFdPVf3ZOC1Cx7+M0cXf4odNLxDC+n7IN3MDcVCTIOSBfqEcBebSv+vlY5AhM0zw05PDbjKrNmBpzv/AqpjnQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/core/-/core-9.7.3.tgz}
+    id: registry.npmmirror.com/@react-spring/core/9.7.3
+    name: '@react-spring/core'
+    version: 9.7.3
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@react-spring/animated': registry.npmmirror.com/@react-spring/animated@9.7.3(react@18.2.0)
+      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared@9.7.3(react@18.2.0)
+      '@react-spring/types': registry.npmmirror.com/@react-spring/types@9.7.3
+      react: registry.npmmirror.com/react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@react-spring/shared@9.7.3(react@18.2.0):
+    resolution: {integrity: sha512-NEopD+9S5xYyQ0pGtioacLhL2luflh6HACSSDUZOwLHoxA5eku1UPuqcJqjwSD6luKjjLfiLOspxo43FUHKKSA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/shared/-/shared-9.7.3.tgz}
+    id: registry.npmmirror.com/@react-spring/shared/9.7.3
+    name: '@react-spring/shared'
+    version: 9.7.3
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@react-spring/types': registry.npmmirror.com/@react-spring/types@9.7.3
+      react: registry.npmmirror.com/react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@react-spring/types@9.7.3:
+    resolution: {integrity: sha512-Kpx/fQ/ZFX31OtlqVEFfgaD1ACzul4NksrvIgYfIFq9JpDHFwQkMVZ10tbo0FU/grje4rcL4EIrjekl3kYwgWw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/types/-/types-9.7.3.tgz}
+    name: '@react-spring/types'
+    version: 9.7.3
+    dev: false
+
+  registry.npmmirror.com/@react-spring/web@9.7.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-BXt6BpS9aJL/QdVqEIX9YoUy8CE6TJrU0mNCqSoxdXlIeNcEBWOfIyE6B14ENNsyQKS3wOWkiJfco0tCr/9tUg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/web/-/web-9.7.3.tgz}
+    id: registry.npmmirror.com/@react-spring/web/9.7.3
+    name: '@react-spring/web'
+    version: 9.7.3
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@react-spring/animated': registry.npmmirror.com/@react-spring/animated@9.7.3(react@18.2.0)
+      '@react-spring/core': registry.npmmirror.com/@react-spring/core@9.7.3(react@18.2.0)
+      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared@9.7.3(react@18.2.0)
+      '@react-spring/types': registry.npmmirror.com/@react-spring/types@9.7.3
+      react: registry.npmmirror.com/react@18.2.0
+      react-dom: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
+    dev: false
+
   registry.npmmirror.com/@selderee/plugin-htmlparser2@0.10.0:
     resolution: {integrity: sha512-gW69MEamZ4wk1OsOq1nG1jcyhXIQcnrsX5JwixVw/9xaiav8TCyjESAruu1Rz9yyInhgBXxkNwMeygKnN2uxNA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@selderee/plugin-htmlparser2/-/plugin-htmlparser2-0.10.0.tgz}
     name: '@selderee/plugin-htmlparser2'
@@ -313,18 +378,18 @@ packages:
     version: 15.7.8
     dev: true
 
-  registry.npmmirror.com/@types/react-dom@18.2.12:
-    resolution: {integrity: sha512-QWZuiA/7J/hPIGocXreCRbx7wyoeet9ooxfbSA+zbIWqyQEE7GMtRn4A37BdYyksnN+/NDnWgfxZH9UVGDw1hg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-dom/-/react-dom-18.2.12.tgz}
+  registry.npmmirror.com/@types/react-dom@18.2.13:
+    resolution: {integrity: sha512-eJIUv7rPP+EC45uNYp/ThhSpE16k22VJUknt5OLoH9tbXoi8bMhwLf5xRuWMywamNbWzhrSmU7IBJfPup1+3fw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-dom/-/react-dom-18.2.13.tgz}
     name: '@types/react-dom'
-    version: 18.2.12
+    version: 18.2.13
     dependencies:
-      '@types/react': registry.npmmirror.com/@types/react@18.2.27
+      '@types/react': registry.npmmirror.com/@types/react@18.2.28
     dev: true
 
-  registry.npmmirror.com/@types/react@18.2.27:
-    resolution: {integrity: sha512-Wfv7B7FZiR2r3MIqbAlXoY1+tXm4bOqfz4oRr+nyXdBqapDBZ0l/IGcSlAfvxIHEEJjkPU0MYAc/BlFPOcrgLw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react/-/react-18.2.27.tgz}
+  registry.npmmirror.com/@types/react@18.2.28:
+    resolution: {integrity: sha512-ad4aa/RaaJS3hyGz0BGegdnSRXQBkd1CCYDCdNjBPg90UUpLgo+WlJqb9fMYUxtehmzF3PJaTWqRZjko6BRzBg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react/-/react-18.2.28.tgz}
     name: '@types/react'
-    version: 18.2.27
+    version: 18.2.28
     dependencies:
       '@types/prop-types': registry.npmmirror.com/@types/prop-types@15.7.8
       '@types/scheduler': registry.npmmirror.com/@types/scheduler@0.16.4
@@ -1265,6 +1330,21 @@ packages:
     version: 1.2.3
     dev: true
 
+  registry.npmmirror.com/react-animated-numbers@0.16.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-MUoOsf8fLzwyUL9l6NEMma+29QtfbeYmt8x2LLt4IeLHQWJQfGa4WIUXB/VDVBXEhg74BhCRytdyvhHR3IiHsw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-animated-numbers/-/react-animated-numbers-0.16.0.tgz}
+    id: registry.npmmirror.com/react-animated-numbers/0.16.0
+    name: react-animated-numbers
+    version: 0.16.0
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-spring/web': registry.npmmirror.com/@react-spring/web@9.7.3(react-dom@18.2.0)(react@18.2.0)
+      react: registry.npmmirror.com/react@18.2.0
+      react-dom: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
+      react-intersection-observer: registry.npmmirror.com/react-intersection-observer@8.34.0(react@18.2.0)
+    dev: false
+
   registry.npmmirror.com/react-dom@18.2.0(react@18.2.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-dom/-/react-dom-18.2.0.tgz}
     id: registry.npmmirror.com/react-dom/18.2.0
@@ -1276,6 +1356,17 @@ packages:
       loose-envify: registry.npmmirror.com/loose-envify@1.4.0
       react: registry.npmmirror.com/react@18.2.0
       scheduler: registry.npmmirror.com/scheduler@0.23.0
+    dev: false
+
+  registry.npmmirror.com/react-intersection-observer@8.34.0(react@18.2.0):
+    resolution: {integrity: sha512-TYKh52Zc0Uptp5/b4N91XydfSGKubEhgZRtcg1rhTKABXijc4Sdr1uTp5lJ8TN27jwUsdXxjHXtHa0kPj704sw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-intersection-observer/-/react-intersection-observer-8.34.0.tgz}
+    id: registry.npmmirror.com/react-intersection-observer/8.34.0
+    name: react-intersection-observer
+    version: 8.34.0
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
+    dependencies:
+      react: registry.npmmirror.com/react@18.2.0
     dev: false
 
   registry.npmmirror.com/react-is@16.13.1:

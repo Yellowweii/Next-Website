@@ -58,7 +58,7 @@ const EmailSection = () => {
               placeholder="Let's talk about..."
             />
           </div>
-          <button className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-20 rounded-lg w-full" type="submit">
+          <button className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-20 rounded-lg w-full" type="submit">
             Send Message
           </button>
         </form>
