@@ -10,7 +10,7 @@ export async function POST() {
       from: "Acme <onboarding@resend.dev>",
       to: ["delivered@resend.dev"],
       subject: "Hello world",
-      react: EmailTemplate({ firstName: "John" }) as React.ReactElement,
+      react: EmailTemplate({ firstName: "Yellowwei" }) as React.ReactElement,
     });
 
     return NextResponse.json(data);
