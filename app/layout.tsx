@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -15,8 +16,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html className='min-h-screen bg-[#121212]' lang="en">
+      <body className={inter.className}>
+        <header>
+          <Navbar />
+        </header>
+        {children}
+      </body>
     </html>
   )
 }
